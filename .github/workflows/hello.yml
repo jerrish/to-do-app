@@ -6,3 +6,5 @@ jobs:
     steps:
       - name: print message
         run: echo "hello, github actions!"
+      - name: checkout
+        uses: actions/checkout@v6
