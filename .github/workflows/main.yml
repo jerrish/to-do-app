@@ -13,5 +13,3 @@ jobs:
     steps:
       - name: print message
         run: echo '${{ toJSON(github) }}'
-      - name: Print Actor
-        run: echo "${{ github.actor }}"
