@@ -1,15 +1,13 @@
 name: hello workflow
-on:
-  pull_request:
-    types:
-      - opened
-    branches:
-      - main
-      - dev-*
-  workflow_dispatch:
+on: push
 jobs:
-  debug:
+  say-hello1:
     runs-on: ubuntu-latest
     steps:
       - name: print message
-        run: echo '${{ toJSON(github) }}'
+        run: echo "hello1, github actions!"
+  say-hello2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print message
+        run: echo "hello2, github actions!"
