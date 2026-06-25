@@ -12,3 +12,14 @@ jobs:
     steps:
       - name: print message
         run: echo "hello2, github actions!"
+  say-hello3:
+    needs: say-hello1
+    runs-on: ubuntu-latest
+    steps:
+      - name: print message
+        run: echo "hello3, github actions!"
+  say-hello4:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print message
+        run: echo "hello4, github actions!"
