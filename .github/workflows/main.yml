@@ -1,7 +1,7 @@
 name: hello workflow
 on: push
 jobs:
-#This is a test change
+#This is a skip test
   say-hello1:
     runs-on: ubuntu-latest
     steps:
